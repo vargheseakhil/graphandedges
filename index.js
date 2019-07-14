@@ -1,4 +1,3 @@
-alert('add same name check')
 let graphObj = cytoscape({
     container: document.getElementById('graph_canvas'), // container to render in
     elements: [ // list of graph elements to start with
