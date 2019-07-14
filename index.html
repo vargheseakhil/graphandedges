@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graph Sample</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="doc_title">Graph assignment</h1>
+    <main class="app_container">
+            <div class="app_container__graph_container" id="graph_canvas">
+            </div>
+            <div class="app_container__section">
+              <h1>Graph settings</h1>
+              <div class="app_container__add_node">
+                  <h3>Add a new node to graph</h3>
+                  <label for="node_name">Add Name:</label>
+                  <input id="node_name" type="text" placeholder="Enter Node name" maxlength="2"/>
+                  <button class="add_node__add" onclick="addNode()">Add Node</button>
+              </div>
+              <div class="app_container__remove_node">
+                    <h3>Remove a node from graph</h3>
+                    <button class="remove_node__delete" onclick="removeNode()">Remove Node</button>
+            </div>
+            <div class="app_container__zoom_panel">
+                    <h3>Zoom settings</h3>
+                    <label for="zoom_panel__text">Zoom In:</label>
+                    <img class="" onclick="zoomIn()" src="./assets/images/zoom_in.png" />
+                    <label for="zoom_panel__text">Zoom Out:</label>
+                    <img class="" onclick="zoomOut()" src="./assets/images/zoom_out.png" />
+            </div>
+            </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.8.1/cytoscape.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.8.1/cytoscape.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.8.1/cytoscape.umd.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
